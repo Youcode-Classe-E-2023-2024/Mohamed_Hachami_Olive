@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:wght@200&family=Rubik:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Junge&family=Just+Me+Again+Down+Here&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.livres h1, .livres h2{
+    text-align: center;
+    margin: 25px;
+    font-family: Inter;
+}
+
+
+.buyBook-cards{
+    
+    margin: 25px auto;
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background: linear-gradient(92deg, #2B8449 -6.49%, rgba(43, 132, 73, 0.77) 128.29%);
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.buyBook-card{
+    border-radius: 7px;
+    width: 200px;   
+    background-color: #0F4F25;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buyBook-card:hover{
+    transform: translateY(-8px);
+    transition: 0.7s;
+    font-size: 17px;
+}
+.card-thumb img{
+    border-radius: 7px;
+    max-height: 50vh;
+}
+.buyBook-card p{
+    
+    padding: 15px 10px;
+    font-size:18px;
+    color: #fff;
+}
+.btn-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: navajowhite;
+    gap: 5px;
+    border-radius: 7px;
+}
+
+
+.price-btn{
+    color: #fff;
+    border: 1px solid #000;
+    background: #186F65;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    height:22px;
+    width: 65px;
+}
+.buy-btn{
+    color: #fff;
+    border: 1px solid #000;
+    background: #186F65;
+    border-radius: 20px;
+    padding: 5px;
+    
+    height:30px;
+    width: 77px;
+}
+.buy-btn a{
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+.buy-btn:hover ,.price-btn:hover {
+    background: linear-gradient(#202927,#186F65);
+    transition: 8ms all ease-in-out;
+    
+}
+
+/* quotes  */
+
+.quotes h1{
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 25px;
+}
+
+.quotes-container{
+    border-radius: 10px;
+    border: 2px solid #0F4F25;
+    background: #F5F5F5;
+    margin: 20px auto;
+    width: 90%;
+    padding: 75px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.quote-card{
+    border-radius: 10px;
+    background: #186F65;
+    padding-top: 10px;
+    width: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.quote-card:nth-child(2){
+    align-self: center;
+   height: 30vh;
+}
+
+.quotC-top{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+
+.quotC-top p{
+    color: #FFF;
+    text-align: center;
+    font-family: Junge;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+
+.quote-auteur{
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+
+}
+.quoteC-bot p{
+    color: #FFF;
+    padding: 15px;
+    font-family: Just Me Again Down Here;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
