@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,38 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Contact</title>
 
 </head>
 <body>
     <div id="navbar"></div>
     <section class="contact">
-        <form >
+        <form action="./contactForm.php" method="POST" >
             <div class="form-conatiner">
                 <h4>Welcome to <span class="form-title">Olivier de Prevence </span> </h4>
                 <h2 style="color: #008000;">Contact</h2>
                 <div class="inputs-container">
                     <div class="row1">
                         <div class="left">
+                        <span class="invalid-feedback"><?php echo $_GET['firstname_err'];?></span>
                             <span>First Name</span>
-                            <input type="text" placeholder="Client name" id="firstname">
+                            <input type="text" name="firstname" placeholder="Client name" >
+                            
                         </div>
                         <div class="right">
                             <span>Last Name</span>
-                            <input type="text" placeholder="Last name" id="lastname">
+                            <input type="text" name="secondname" placeholder="Last name">
+                            <span class="invalid-feedback"><?php echo $secondname_err;?></span>
                         </div>
                     </div>
                     <div class="row2">
                         <span>Enter your email</span>
-                        <input type="text" placeholder="example@gmail.com" id="email">
+                        <input type="text" name="email" placeholder="example@gmail.com" >
                     </div>
                     <div class="row3">
                         <span>Enter a message</span>
-                        <textarea name=""  placeholder="Enter a message" id="message"></textarea>
+                        <textarea name="message"  placeholder="Enter a message" ></textarea>
                     </div>
                     <button class="btn-send" type="submit" id="submitBtn">
                         Send
                     </button>
+                    <?php
+                        
+                        if (!empty($_GET['err'])) {
+                            echo '<div class="alert alert-danger" role="alert">' . htmlspecialchars($_GET['err']) . '</div>';
+                        }
+                    ?>
+                    
                 </div>
             </div>
         </form>
@@ -44,30 +56,6 @@
     <div id="footer"></div>
     <script src="./Components/navBar.js"></script>
     <script src="./Components/Footer.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        for (let index = 0; index <3; index++) {
-
-            console.log(index);
-            
-        }
-         var submitBtn = document.getElementById("submitBtn");
-         console.log("bef clicked");
-         console.log(submitBtn);
-        submitBtn.addEventListener("onclick", function() {
-            console.log("clicked");
-            var firstName = document.getElementById("firstname").value;
-            var lastName = document.getElementById("lastname").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            console.log("First Name: " + firstName);
-            console.log("Last Name: " + lastName);
-            console.log("Email: " + email);
-            console.log("Message: " + message);
-        });
-    });
-
-    </script>
+   
 </body>
 </html>
