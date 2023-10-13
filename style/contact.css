@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Just+Another+Hand&family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200&family=Rubik:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-image: url("../assets/register-bg.png");
+    background-size: cover;
+    background-position: center;
+
+  }
+  .contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 188;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+  }
+  .contact.show::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+form{
+    margin: 0;
+    margin-top: 25px;
+    position: absolute;
+    max-width: 360px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-out;
+    border: 1px solid #ADADAD;
+    border-radius: 7px;
+    padding: 25px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.form-conatiner h4,h2{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.form-title{
+    color: #779341;
+}
+.inputs-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left input , .right input{
+    height: 45px;
+    border: 1px solid #ADADAD;
+    border-radius: 7px;
+    background: #FFF;
+    padding-left: 10px;
+    width: 95%;
+}
+
+.row1 span , .row2 span, .row3 span{
+    color: #000;
+
+    /* font-family: Poppins; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+.row2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row2 input{
+    height: 45px;
+    border: 1px solid #ADADAD;
+    border-radius: 7px;
+    background: #FFF;
+    padding: 0 20px;
+
+}
+
+.row3{
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+    
+}
+
+.row3 textarea{
+    border: 1px solid #ADADAD;
+    border-radius: 7px;
+    height: 60px;
+    padding:  10px;
+}
+
+.btn-send{
+    align-self: center;
+    height: 7vh;
+    width: 50%;
+    background-color: #008000;
+    border: none;
+    border-radius: 5px ;
+    color: #fff;
+}
+
