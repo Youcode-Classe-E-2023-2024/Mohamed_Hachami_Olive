@@ -52,6 +52,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .nav-link:hover{
@@ -84,6 +85,7 @@
     text-decoration: none;
     line-height: normal;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
 /* Home section */
