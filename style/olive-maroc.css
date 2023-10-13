@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:wght@200&family=Rubik:ital,wght@1,700&display=swap');
+@import url(https://db.onlinewebfonts.com/c/381560810e4c36d16a07abb03254e264?family=JejuGothic);
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Just+Another+Hand&family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:wght@200&family=Rubik:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.first-title{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: #186F65;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding: 25px;
+    width: 40%;
+    border-bottom:2px solid #186F65 ;
+    
+}
+
+/* importance-container */
+
+.importance-container{
+    
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.importance-container h1 , .sol-container h1 ,.exigence-container h1{
+    text-align: center;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    font-family: Italiana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.importance-cards{
+    margin: 55px auto;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.importance-thumb1{
+    border: 1px solid #186F65;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+    width: 40%; 
+}
+.importance-thumb1 img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+}
+.importance-description{
+    border: 1px solid #186F65;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #F5F5F5;
+    width: 40%;
+    padding: 30px;
+}
+.desc-top{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-top img{
+    
+    height: 25px;
+    padding: 2px 10px;
+}
+
+.desc-top p{
+    font-size: 20px;
+    font-family: JejuGothic;
+}
+
+.repartition-items{
+    
+    padding: 25px;
+}
+.repartition-item{
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.repartition-item img{
+    height: 20px;
+    margin-right: 7px;
+}
+
+.repartition-item span{
+    font-size: 16px;
+    font-family: JejuGothic;
+}
+
+/* exigence-container */
+
+.exigence-cards{
+    margin: 55px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.exigence-description{
+    border: 1px solid #186F65;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #F5F5F5;
+    width: 40%;
+    padding: 30px;
+    
+}
+
+.importance-thumb2{
+    border: 1px solid #186F65;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;  
+    width: 40%; 
+}
+.importance-thumb2 img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;  
+}
+
+/* sol-container */
+.sol-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sol-description{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 55px 86px;
+    border: 1px solid #186F65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
